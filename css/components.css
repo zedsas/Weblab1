@@ -1,0 +1,386 @@
+.navigation_menu_list li,
+.navigation_menu_list a,
+.split_screen p,
+.split_screen_noflex p,
+.split_screen_nopadding p,
+.split_screen a,
+.split_screen_text a,
+.split_screen_text_uniq a {
+  display: inline-block;
+  color: #000;
+  font-style: normal;
+  font-size: 1em;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+.split_screen_nopadding p {
+  font-size: 0.6em;
+}
+
+.split_screen a,
+.split_screen_noflex a {
+  color: #8a53ff;
+}
+
+.split_screen,
+.split_screen_nopadding,
+.split_screen_header,
+.split_screen_header_smaller,
+.split_screen_noflex,
+.split_screen_second,
+.split_screen_right,
+.split_screen_text,
+.split_screen_noflex_custom,
+.split_screen_nopadding_small {
+  padding-left: 150px;
+  display: flex;
+  text-align: left;
+  margin: 0;
+}
+
+.split_screen {
+  padding-top: 25px;
+  justify-content: flex-start;
+  font-size: 1.5em;
+}
+
+.split_screen_nopadding {
+  padding-left: 0;
+  padding-top: 25px;
+  justify-content: center;
+  font-size: 1.5em;
+  gap: 15px;
+}
+
+.split_screen_header {
+  padding-top: 170px;
+  justify-content: left;
+  font-size: 4em;
+  font-family: Changa One;
+}
+
+.split_screen_header_smaller {
+  padding-top: 25px;
+  text-align: inherit;
+  justify-content: inherit;
+  font-size: 1.5em;
+  font-family: Changa One;
+}
+
+.split_screen_button {
+  background-color: #8a53ff;
+  font-size: 0.8em;
+  color: #ffff;
+  border-radius: 0.15em;
+  padding: 15px 15px;
+  margin: 0;
+  outline: none;
+}
+
+.split_screen_button_alternative {
+  background-color: #8a53ff;
+  font-size: 0.8em;
+  color: #ffff;
+  border-radius: 0.15em;
+  padding: 8px 15px;
+  margin: 0;
+  outline: none;
+}
+
+.screen_center {
+  display: flex;
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0;
+  justify-content: center;
+  gap: 15px;
+}
+
+.screen_center_colored {
+  display: inline-block;
+  color: #8a53ff;
+  font-family: Roboto;
+  font-size: 1em;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 0%;
+}
+
+.screen_center_header_smaller,
+.split_screen_noflex h2,
+.screen_center_head {
+  display: flex;
+  text-align: inherit;
+  justify-content: inherit;
+  font-size: 2em;
+  margin: 0;
+  font-family: Changa One;
+}
+
+.screen_center_head {
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.split_screen_header_smaller_nopadding {
+  display: inherit;
+  text-align: inherit;
+  justify-content: inherit;
+  font-size: 1.2em;
+  margin: 0;
+  font-family: Changa One;
+}
+
+.split_screen_noflex {
+  padding-left: 0;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1em;
+  gap: 15px;
+  border-radius: 0.15em;
+}
+
+.split_screen_noflex_custom {
+  padding-left: 150px;
+  flex-direction: row;
+  align-items: left;
+  font-size: 1em;
+  gap: 15px;
+  border-radius: 0.15em;
+}
+
+.split_screen_noflex picture,
+.split_screen_second picture {
+  object-fit: cover;
+  display: flex;
+  width: 600px;
+  height: 550px;
+  border-radius: 0.15em;
+}
+
+.split_screen_smaller {
+  object-fit: cover;
+  display: flex;
+  width: 200px;
+  height: 400px;
+  border-radius: 0.15em;
+}
+
+.split_screen_noflex_small {
+  padding-top: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  margin: 0;
+}
+
+.split_screen_noflex_small picture,
+.split_screen_nopadding picture {
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  width: 400px;
+  height: 400px;
+}
+
+.split_screen_noflex_small img,
+.split_screen_nopadding img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+.split_screen_second {
+  padding-top: 20px;
+  justify-content: left;
+  font-size: 1.5em;
+  gap: 15px;
+}
+
+.split_screen_right {
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 100px;
+  width: 650px;
+  gap: 15px;
+}
+
+.split_screen_right img {
+  height: 80px;
+  border-radius: 2em;
+}
+
+.picture_column img {
+  height: 270px;
+  width: 350px;
+}
+
+.split_screen video {
+  padding-left: 150px;
+  justify-content: center;
+  width: 1380px;
+  height: 760px;
+  object-fit: cover;
+}
+
+.split_screen_text {
+  padding-right: 150px;
+  flex-direction: column;
+}
+
+.split_screen_text_uniq {
+  padding-right: 130px;
+  margin-left: -75px;
+  width: 600px;
+  height: 100%;
+  flex-direction: column;
+}
+
+.split_screen_text_uniq h2 {
+  font-size: 3.5em;
+  margin-bottom: 100px;
+}
+
+.split_screen_text a,
+.split_screen_text_uniq a {
+  padding-right: 50px;
+  color: #000;
+  font-size: 1.2em;
+}
+
+.split_screen_text h3 {
+  color: #000;
+  font-size: 1.5em;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+@media (max-width: 480px) {
+  .navigation_menu_list li,
+  .navigation_menu_list a,
+  .split_screen p,
+  .split_screen_noflex p,
+  .split_screen_nopadding p,
+  .split_screen a,
+  .split_screen_text a {
+    font-size: 0.8em;
+  }
+
+  .split_screen_header {
+    font-size: 1.5em;
+    padding-top: 90px;
+  }
+
+  .split_screen,
+  .split_screen_nopadding,
+  .split_screen_noflex,
+  .split_screen_second,
+  .split_screen_right,
+  .split_screen_text,
+  .split_screen_text_uniq {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1em;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .split_screen_noflex picture {
+    width: 100vw;
+    height: auto;
+  }
+
+  .picture_column {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+}
+
+.split_screen picture,
+.split_screen_second picture {
+  max-width: 50%;
+  max-height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+.split_screen_second picture {
+  max-width: 70%;
+}
+
+.split_screen picture img .split_screen_second img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.15em;
+}
+
+.picture_column {
+  flex-direction: column;
+  padding-top: 15px;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1em;
+  margin: 0;
+  gap: 8px;
+}
+
+.author_block {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.split_screen_nopadding_small {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 1em;
+  gap: 8px;
+}
+
+.split_screen_nopadding_small img {
+  width: 100px;
+  height: 100px;
+}
+
+.item_row_button {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 25px;
+}
+
+.video-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #000;
+  font-size: 1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.video-cta img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.video-cta figcaption {
+  margin: 0;
+  line-height: 1;
+}
+
+.featured-section {
+  margin-bottom: 80px;
+}

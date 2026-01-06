@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/backgrounds.css" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <header>
+      <picture class="space">
+        <img src="assets/images/logo.svg" alt="Логотип" />
+      </picture>
+      <nav class="navigation_menu">
+        <ul class="navigation_menu_list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="blog.html">Истории</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="navigation_menu_icons">
+          <img src="assets/images/icon-search.svg" alt="Поиск" />
+          <img src="assets/images/icon-profile.svg" alt="Профиль" />
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main_background">
+        <h2 class="split_screen_header">
+          Обсудим ваше <br />
+          следующее путешествие!
+        </h2>
+        <p class="split_screen">
+          Поделитесь любимым местом для путешествий, и мы <br />
+          расскажем о нём в нашем блоге!
+        </p>
+        <div class="item_row_button">
+          <button type="button" class="split_screen_button">
+            Поделиться историей
+          </button>
+
+          <figure class="video-cta">
+            <img src="assets/images/icon-play-hero.svg" alt="Смотреть видео" />
+            <figcaption>Смотреть видео</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="split_screen featured-section">
+        <img
+          src="assets/images/blog-swiss-alps.jpg"
+          alt="Путешествие в Швейцарию"
+        />
+        <div>
+          <a class="split_screen">Рекомендуемое направление</a>
+          <h2 class="split_screen_header_smaller">
+            Наш блог о приключениях в Швейцарии
+          </h2>
+          <p class="split_screen">
+            Планируете поездку в Швейцарские Альпы? Хотите узнать о требованиях
+            <br />
+            для путешествия в Швейцарию во время пандемии? Наш блог может помочь!
+          </p>
+          <div class="split_screen">
+            <img src="assets/images/icon-play-small.svg" alt="Смотреть сейчас" />
+            <p>Смотреть сейчас</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen_center">
+        <a class="screen_center">Присоединяйтесь к нашим приключениям</a>
+      </section>
+      <section class="screen_center">
+        <h2 class="screen_center_head">Открывайте мир вместе с нами</h2>
+      </section>
+
+      <section class="grid">
+        <div class="item">
+          <img src="assets/images/dest-iceland.jpg" alt="Исландия" />
+          <h2 class="screen_center_header_smaller">Исландия</h2>
+          <p class="screen_center_colored">Открыть</p>
+        </div>
+        <div class="item">
+          <img src="assets/images/dest-italy.jpg" alt="Италия" />
+          <h2 class="screen_center_header_smaller">Италия</h2>
+          <p class="screen_center_colored">Открыть</p>
+        </div>
+        <div class="item">
+          <img src="assets/images/dest-dubai.jpg" alt="Дубай" />
+          <h2 class="screen_center_header_smaller">Дубай</h2>
+          <p class="screen_center_colored">Открыть</p>
+        </div>
+        <div class="item">
+          <img src="assets/images/dest-patagonia.jpg" alt="Патагония" />
+          <h2 class="screen_center_header_smaller">Патагония</h2>
+          <p class="screen_center_colored">Открыть</p>
+        </div>
+      </section>
+
+      <section class="join_background">
+        <div class="screen_center">
+          <p class="screen_center_colored">Давайте создадим сообщество</p>
+        </div>
+        <div class="screen_center">
+          <h2 class="screen_center_head">
+            Присоединяйтесь к нашему следующему направлению
+          </h2>
+        </div>
+        <form action="formHandler.js" autocomplete="on" class="screen_center">
+          <fieldset class="split_screen_noflex">
+            <h2 class="split_screen_header_smaller_nopadding">
+              Поделитесь своими путешествиями
+            </h2>
+            <p class="split_screen_noflex">
+              Предложите новое направление для путешествий, которое вы хотите
+              увидеть, и мы <br />
+              расскажем о нём в нашем блоге.
+            </p>
+            <input
+              type="text"
+              placeholder="Название направления"
+              class="form_element"
+            />
+            <input
+              type="text"
+              placeholder="Название направления"
+              class="form_element"
+            />
+            <select class="form_element">
+              <option value="">Страна или направление</option>
+              <option value="other">Что-то другое</option>
+            </select>
+            <input type="text" placeholder="Ваше имя" class="form_element" />
+            <select class="form_element">
+              <option value="">Категория съёмки</option>
+              <option value="other">Что-то другое</option>
+            </select>
+            <textarea
+              rows="5"
+              cols="45"
+              name="text"
+              class="form_element"
+              placeholder="Опишите, на каких фотографиях вы хотите сосредоточиться"
+            ></textarea>
+            <input
+              type="submit"
+              value="Отправить"
+              class="split_screen_button_alternative"
+            />
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="screen_center">
+        <p class="screen_center_colored">Читайте наши последние записи</p>
+      </section>
+      <section class="screen_center">
+        <h2 class="screen_center_head">Недавние истории</h2>
+      </section>
+
+      <section class="split_screen_second">
+        <div>
+          <picture>
+            <source media="(min-width: 360 px)" srcset="path" />
+            <img src="assets/images/zermatt-matterhorn.jpg" alt="гора" />
+          </picture>
+          <div class="split_screen_nopadding">
+            <div>
+              <h2 class="split_screen_header_smaller_nopadding">
+                Церматт, Швейцария
+              </h2>
+              <p class="split_screen_nopadding">
+                Восхититесь красотой знакового Маттерхорна. Найдите лучшие места
+                <br />
+                для проживания с наилучшими видами на эту вершину...
+              </p>
+            </div>
+            <picture class="split_screen_nopadding_small">
+              <source media="(min-width: 360 px)" srcset="path" />
+            </picture>
+          </div>
+        </div>
+        <div class="grid_row">
+          <div class="item_row">
+            <picture>
+              <source media="(min-width: 10 px)" srcset="path" />
+              <img src="assets/images/blog-tuscany.jpg" alt="Элемент 1" />
+            </picture>
+            <div>
+              <h2 class="screen_center_header_smaller">Тоскана, Италия</h2>
+              <p class="split_screen_noflex">
+                Удивительная Тоскана славится знаменитым искусством и архитектурой
+                эпохи Возрождения, а также обширными живописными ландшафтами.
+                Читать блог полностью...
+              </p>
+            </div>
+          </div>
+          <div class="item_row">
+            <picture>
+              <source media="(min-width: 10 px)" srcset="path" />
+              <img src="assets/images/blog-kyoto.jpg" alt="Элемент 2" />
+            </picture>
+            <div>
+              <h2 class="screen_center_header_smaller">Киото, Япония</h2>
+              <p class="split_screen_noflex">
+                Киото известен своими храмами, садами, синтоистскими святилищами и
+                деревянными домами. Самое время посетить Токио. Читать блог
+                полностью...
+              </p>
+            </div>
+          </div>
+          <div class="item_row">
+            <picture>
+              <source media="(min-width: 10 px)" srcset="path" />
+              <img src="assets/images/blog-lofoten.jpg" alt="Элемент 3" />
+            </picture>
+            <div>
+              <h2 class="screen_center_header_smaller">
+                Лофотенские острова, Норвегия
+              </h2>
+              <p class="split_screen_noflex">
+                Остров с остроконечными пиками и арктическими ландшафтами. Эта
+                удивительная земля идеально подходит для вашей следующей открытки.
+                Читать блог полностью...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="navigation_menu">
+      <p>&copy; 2022, Talking Travel. Все права защищены.</p>
+      <nav class="navigation_menu">
+        <ul class="navigation_menu_list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="#">Галерея</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

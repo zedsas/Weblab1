@@ -1,0 +1,29 @@
+header,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 150px;
+}
+
+.space {
+  height: 80px;
+}
+
+.navigation_menu,
+.navigation_menu_list,
+.navigation_menu_icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.navigation_menu_list {
+  justify-content: center;
+}
+
+.navigation_menu_icons {
+  gap: 15px;
+}
